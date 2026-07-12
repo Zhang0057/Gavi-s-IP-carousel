@@ -14,9 +14,11 @@ type CharacterItem = {
   intro: string;
 };
 
+const BASE_URL = import.meta.env.BASE_URL;
+
 const CHARACTERS: CharacterItem[] = [
   {
-    src: "/ip/role-1-akejie.png",
+    src: `${BASE_URL}ip/role-1-akejie.png`,
     bg: "#5578A8",
     panel: "#7392BF",
     name: "阿客姐",
@@ -26,7 +28,7 @@ const CHARACTERS: CharacterItem[] = [
       "她是客家美食文化的温柔化身，身着蓝色大襟衫与红色腰带，将坚韧、智慧与亲切融入一颦一笑，用传统与现代交融的方式，把客家味道与人间温暖传递给更多人。",
   },
   {
-    src: "/ip/role-2-xiaoguangguang.png",
+    src: `${BASE_URL}ip/role-2-xiaoguangguang.png`,
     bg: "#F25549",
     panel: "#F77D73",
     name: "小广光",
@@ -36,24 +38,24 @@ const CHARACTERS: CharacterItem[] = [
       "她是第十七届大广赛的创意形象代表，象征新时代大学生在广告艺术中的青春能量与表达热情，也是陪伴参赛者不断探索、持续发想的灵感伙伴。",
   },
   {
-    src: "/ip/role-3-awei.png",
+    src: `${BASE_URL}ip/role-3-awei.png`,
     bg: "#D3A56E",
     panel: "#E2BE90",
     name: "阿围",
     subName: "A WEI",
     slogan: "阿围在，家就在，守护团圆与归属",
     intro:
-      "它以关西新围这一经典围屋文化为灵感原型，象征团结、防御与传承，也承载着客家人坚韧不拔、守望相助、崇文重教的精神气质。",
+      "他以关西新围这一经典围屋文化为灵感原型，象征团结、防御与传承，也承载着客家人坚韧不拔、守望相助、崇文重教的精神气质。",
   },
   {
-    src: "/ip/role-4-lingyao.png",
+    src: `${BASE_URL}ip/role-4-lingyao.png`,
     bg: "#F24A42",
     panel: "#FF857F",
     name: "灵曜",
     subName: "LINGYAO",
     slogan: "灵感被点亮，创意正发生",
     intro:
-      "它是第十八届大广赛“AI无界·创意赋新章”主题下诞生的官方创意伙伴，象征AI协同创作时代的灵感能量与青春表达，陪伴创作者把想法一步步变成作品。",
+      "他是第十八届大广赛“AI无界·创意赋新章”主题下诞生的官方创意伙伴，象征AI协同创作时代的灵感能量与青春表达，陪伴创作者把想法一步步变成作品。",
   },
 ];
 
@@ -225,7 +227,7 @@ function App() {
             letterSpacing: "0.18em",
           }}
         >
-          GAVI'S IP
+          GAVI&apos;S IP
         </div>
 
         <div className="absolute inset-0" style={{ zIndex: 3 }}>
@@ -252,7 +254,7 @@ function App() {
 
         <div
           className="absolute bottom-6 left-4 sm:bottom-20 sm:left-24"
-          style={{ zIndex: 60, maxWidth: "340px" }}
+          style={{ zIndex: 60, maxWidth: "360px" }}
         >
           <p
             className="mb-2 text-base font-bold uppercase tracking-widest text-white sm:mb-3 sm:text-[22px]"
@@ -265,27 +267,27 @@ function App() {
           </p>
 
           <div className="mb-4 hidden text-white sm:mb-5 sm:block">
-  <p
-    className="text-xs sm:text-sm"
-    style={{
-      opacity: 0.92,
-      lineHeight: 1.6,
-      fontWeight: 600,
-    }}
-  >
-    {activeCharacter.slogan}
-  </p>
+            <p
+              className="text-xs sm:text-sm"
+              style={{
+                opacity: 0.92,
+                lineHeight: 1.6,
+                fontWeight: 600,
+              }}
+            >
+              {activeCharacter.slogan}
+            </p>
 
-  <p
-    className="mt-2 text-xs sm:text-sm"
-    style={{
-      opacity: 0.8,
-      lineHeight: 1.75,
-    }}
-  >
-    {activeCharacter.intro}
-  </p>
-</div>
+            <p
+              className="mt-2 text-xs sm:text-sm"
+              style={{
+                opacity: 0.8,
+                lineHeight: 1.75,
+              }}
+            >
+              {activeCharacter.intro}
+            </p>
+          </div>
 
           <div className="flex gap-3">
             <button
