@@ -14,11 +14,10 @@ type CharacterItem = {
   intro: string;
 };
 
-const BASE_URL = import.meta.env.BASE_URL;
 
 const CHARACTERS: CharacterItem[] = [
   {
-    src: `${BASE_URL}ip/role-1-akejie.png`,
+    src: "ip/role-1-akejie.png",
     bg: "#5578A8",
     panel: "#7392BF",
     name: "阿客姐",
@@ -28,7 +27,7 @@ const CHARACTERS: CharacterItem[] = [
       "她是客家美食文化的温柔化身，身着蓝色大襟衫与红色腰带，将坚韧、智慧与亲切融入一颦一笑，用传统与现代交融的方式，把客家味道与人间温暖传递给更多人。",
   },
   {
-    src: `${BASE_URL}ip/role-2-xiaoguangguang.png`,
+    src: "ip/role-2-xiaoguangguang.png",
     bg: "#F25549",
     panel: "#F77D73",
     name: "小广光",
@@ -38,7 +37,7 @@ const CHARACTERS: CharacterItem[] = [
       "她是第十七届大广赛的创意形象代表，象征新时代大学生在广告艺术中的青春能量与表达热情，也是陪伴参赛者不断探索、持续发想的灵感伙伴。",
   },
   {
-    src: `${BASE_URL}ip/role-3-awei.png`,
+    src: "ip/role-3-awei.png",
     bg: "#D3A56E",
     panel: "#E2BE90",
     name: "阿围",
@@ -48,7 +47,7 @@ const CHARACTERS: CharacterItem[] = [
       "他以关西新围这一经典围屋文化为灵感原型，象征团结、防御与传承，也承载着客家人坚韧不拔、守望相助、崇文重教的精神气质。",
   },
   {
-    src: `${BASE_URL}ip/role-4-lingyao.png`,
+    src: "ip/role-4-lingyao.png",
     bg: "#F24A42",
     panel: "#FF857F",
     name: "灵曜",
